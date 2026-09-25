@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720">
+  <defs>
+    <filter id="grain" x="0" y="0" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" stitchTiles="stitch"/>
+      <feColorMatrix type="matrix" values="0 0 0 0 1  0 0 0 0 1  0 0 0 0 1  0 0 0 0.04 0"/>
+      <feComposite operator="over" in2="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g filter="url(#grain)">
+  <rect width="1280" height="720" fill="#0A1018"/>
+  <defs>
+    <radialGradient id="s1" cx="40%" cy="35%" r="80%">
+      <stop offset="0%" stop-color="#12203A"/>
+      <stop offset="100%" stop-color="#070B12"/>
+    </radialGradient>
+  </defs>
+  <rect width="1280" height="720" fill="url(#s1)"/>
+  <g fill="#DDE6F2" opacity="0.8">
+    <circle cx="120" cy="100" r="2"/><circle cx="300" cy="60" r="2"/><circle cx="520" cy="140" r="2"/>
+    <circle cx="760" cy="80" r="2"/><circle cx="980" cy="160" r="2"/><circle cx="1150" cy="90" r="2"/>
+    <circle cx="200" cy="300" r="2"/><circle cx="1050" cy="330" r="2"/><circle cx="640" cy="50" r="2"/>
+  </g>
+  <path d="M520 430 L640 330 L760 430 L760 520 L520 520 Z" fill="#1B2C46" stroke="#5FA8E8" stroke-width="6"/>
+  <circle cx="640" cy="420" r="30" fill="#0A1018" stroke="#5FA8E8" stroke-width="6"/>
+  <path d="M520 470 L430 520 L520 520 Z" fill="#1B2C46" stroke="#5FA8E8" stroke-width="6"/>
+  <path d="M760 470 L850 520 L760 520 Z" fill="#1B2C46" stroke="#5FA8E8" stroke-width="6"/>
+  <path d="M560 520 L580 600 L640 540 L700 600 L720 520" fill="none" stroke="#F5C542" stroke-width="8"/>
+  <circle cx="980" cy="240" r="70" fill="#8C5A3C" stroke="#5FA8E8" stroke-width="4"/>
+  <ellipse cx="980" cy="240" rx="120" ry="26" fill="none" stroke="#C8D6E8" stroke-width="5"/>
+  undefined
+  <rect width="1280" height="720" fill="none" stroke="#272A30" stroke-width="4"/>
+  </g>
+</svg>

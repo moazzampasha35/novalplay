@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720">
+  <defs>
+    <filter id="grain" x="0" y="0" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" stitchTiles="stitch"/>
+      <feColorMatrix type="matrix" values="0 0 0 0 1  0 0 0 0 1  0 0 0 0 1  0 0 0 0.04 0"/>
+      <feComposite operator="over" in2="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g filter="url(#grain)">
+  <rect width="1280" height="720" fill="#1A130A"/>
+  <defs>
+    <radialGradient id="r1" cx="50%" cy="40%" r="75%">
+      <stop offset="0%" stop-color="#33230C"/>
+      <stop offset="100%" stop-color="#120D07"/>
+    </radialGradient>
+  </defs>
+  <rect width="1280" height="720" fill="url(#r1)"/>
+  <circle cx="640" cy="330" r="230" fill="none" stroke="#8A6A2F" stroke-width="3"/>
+  <circle cx="640" cy="330" r="196" fill="none" stroke="#6E5426" stroke-width="2"/>
+  <g fill="#C99A3B" stroke="#8A6A2F" stroke-width="4">
+    <path d="M640 150 L672 250 L780 252 L694 314 L726 412 L640 352 L554 412 L586 314 L500 252 L608 250 Z"/>
+  </g>
+  <g stroke="#8A6A2F" stroke-width="3" fill="none">
+    <path d="M330 560 h620 M330 600 h620 M380 560 v40 M520 560 v40 M660 560 v40 M800 560 v40 M900 560 v40"/>
+  </g>
+  <g fill="#C99A3B">
+    <circle cx="640" cy="580" r="26"/><circle cx="520" cy="580" r="18"/><circle cx="760" cy="580" r="18"/>
+  </g>
+  undefined
+  <rect width="1280" height="720" fill="none" stroke="#272A30" stroke-width="4"/>
+  </g>
+</svg>

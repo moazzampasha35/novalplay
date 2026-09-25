@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720">
+  <defs>
+    <filter id="grain" x="0" y="0" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" stitchTiles="stitch"/>
+      <feColorMatrix type="matrix" values="0 0 0 0 1  0 0 0 0 1  0 0 0 0 1  0 0 0 0.04 0"/>
+      <feComposite operator="over" in2="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g filter="url(#grain)">
+  <rect width="1280" height="720" fill="#100C1E"/>
+  <rect width="1280" height="720" fill="url(#g1)"/>
+  <defs>
+    <radialGradient id="g1" cx="50%" cy="30%" r="80%">
+      <stop offset="0%" stop-color="#1C1533"/>
+      <stop offset="100%" stop-color="#0B0913"/>
+    </radialGradient>
+  </defs>
+  <g stroke="#2E2358" stroke-width="2">
+    <line x1="0" y1="600" x2="1280" y2="600"/><line x1="0" y1="500" x2="1280" y2="500"/>
+    <line x1="0" y1="430" x2="1280" y2="430"/><line x1="0" y1="380" x2="1280" y2="380"/>
+    <line x1="0" y1="345" x2="1280" y2="345"/><line x1="0" y1="325" x2="1280" y2="325"/>
+    <line x1="640" y1="720" x2="420" y2="0"/><line x1="640" y1="720" x2="860" y2="0"/>
+    <line x1="640" y1="720" x2="180" y2="0"/><line x1="640" y1="720" x2="1100" y2="0"/>
+    <line x1="640" y1="720" x2="-60" y2="0"/><line x1="640" y1="720" x2="1340" y2="0"/>
+  </g>
+  <rect x="240" y="180" width="180" height="180" fill="none" stroke="#F5C542" stroke-width="10" transform="rotate(12 330 270)"/>
+  <rect x="860" y="220" width="120" height="120" fill="none" stroke="#8B7CF6" stroke-width="8" transform="rotate(-18 920 280)"/>
+  <circle cx="1020" cy="150" r="26" fill="none" stroke="#38E1C6" stroke-width="6"/>
+  <path d="M180 640 L340 520 L520 640 Z" fill="#1A1430" stroke="#F5C542" stroke-width="6"/>
+  undefined
+  <rect width="1280" height="720" fill="none" stroke="#272A30" stroke-width="4"/>
+  </g>
+</svg>

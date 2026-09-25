@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720">
+  <defs>
+    <filter id="grain" x="0" y="0" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" stitchTiles="stitch"/>
+      <feColorMatrix type="matrix" values="0 0 0 0 1  0 0 0 0 1  0 0 0 0 1  0 0 0 0.04 0"/>
+      <feComposite operator="over" in2="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g filter="url(#grain)">
+  <rect width="1280" height="720" fill="#161008"/>
+  <defs>
+    <radialGradient id="lw" cx="50%" cy="42%" r="80%">
+      <stop offset="0%" stop-color="#2E2008"/>
+      <stop offset="100%" stop-color="#0F0B05"/>
+    </radialGradient>
+  </defs>
+  <rect width="1280" height="720" fill="url(#lw)"/>
+  <g transform="translate(640 360)">
+    <circle r="240" fill="#241A08" stroke="#F5C542" stroke-width="10"/>
+    <circle r="180" fill="#171006" stroke="#8A6A2F" stroke-width="4"/>
+    <g stroke="#F5C542" stroke-width="6">
+      <line x1="0" y1="-180" x2="0" y2="180"/><line x1="-180" y1="0" x2="180" y2="0"/>
+      <line x1="-127" y1="-127" x2="127" y2="127"/><line x1="-127" y1="127" x2="127" y2="-127"/>
+    </g>
+    <circle r="60" fill="#F5C542"/>
+    <circle r="24" fill="#171006"/>
+  </g>
+  <g fill="#F5C542">
+    <circle cx="300" cy="160" r="8"/><circle cx="980" cy="160" r="8"/>
+    <circle cx="300" cy="560" r="8"/><circle cx="980" cy="560" r="8"/>
+  </g>
+  undefined
+  <rect width="1280" height="720" fill="none" stroke="#272A30" stroke-width="4"/>
+  </g>
+</svg>

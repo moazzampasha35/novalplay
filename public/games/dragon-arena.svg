@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720">
+  <defs>
+    <filter id="grain" x="0" y="0" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" stitchTiles="stitch"/>
+      <feColorMatrix type="matrix" values="0 0 0 0 1  0 0 0 0 1  0 0 0 0 1  0 0 0 0.04 0"/>
+      <feComposite operator="over" in2="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g filter="url(#grain)">
+  <rect width="1280" height="720" fill="#170D0B"/>
+  <defs>
+    <radialGradient id="d1" cx="50%" cy="45%" r="80%">
+      <stop offset="0%" stop-color="#3A1710"/>
+      <stop offset="100%" stop-color="#140907"/>
+    </radialGradient>
+  </defs>
+  <rect width="1280" height="720" fill="url(#d1)"/>
+  <ellipse cx="640" cy="620" rx="460" ry="90" fill="#241009" stroke="#B3441E" stroke-width="6"/>
+  <g fill="none" stroke="#E86A2A" stroke-width="10" stroke-linecap="round">
+    <path d="M400 420 C 470 300 610 280 660 340 C 700 300 800 300 860 380"/>
+    <path d="M660 340 C 650 400 630 460 640 520"/>
+  </g>
+  <path d="M400 420 C 380 360 400 320 430 300 C 430 360 450 400 470 420" fill="#B3441E"/>
+  <path d="M860 380 C 890 330 920 320 950 330 C 930 380 910 420 880 440" fill="#B3441E"/>
+  <g fill="#F5C542">
+    <circle cx="640" cy="540" r="12"/><circle cx="600" cy="560" r="8"/><circle cx="680" cy="560" r="8"/>
+  </g>
+  <g stroke="#B3441E" stroke-width="5" opacity="0.7">
+    <line x1="180" y1="180" x2="240" y2="120"/><line x1="1060" y1="180" x2="1120" y2="120"/>
+    <line x1="240" y1="180" x2="180" y2="120"/><line x1="1120" y1="180" x2="1060" y2="120"/>
+  </g>
+  undefined
+  <rect width="1280" height="720" fill="none" stroke="#272A30" stroke-width="4"/>
+  </g>
+</svg>
