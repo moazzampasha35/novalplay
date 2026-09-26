@@ -11,6 +11,8 @@ export function generateStaticParams() {
   return games.map((game) => ({ slug: game.slug }));
 }
 
+export const dynamicParams = false;
+
 export async function generateMetadata({ params }) {
   const { slug } = await params;
   const game = getGameBySlug(slug);
